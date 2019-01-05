@@ -8,3 +8,5 @@ As a group, we created both the front and backend of this website and it made is
 following link http://aqueous-reef-85157.herokuapp.com/
 
 The front end mainly uses html, css, js and, jQuery and the server side were coded using ajax, mongo db and, node.js
+
+We received a grade of 100% (class avg. 75.5%) in this project.
