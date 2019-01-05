@@ -1,0 +1,22 @@
+#ProfileInterface {
+	margin-right: 20%;
+}
+
+.InputDescription{
+	margin-bottom: 0px;
+	font-weight: bold;
+	font-style: oblique;
+}
+
+.SaveInput {
+	width: 100%;
+  height: 35px;
+  margin-bottom: 20px;
+  /* padding: 0 10px 0 10px; */
+}
+
+.profileButton {
+	margin-bottom: 10px;
+	height: 35px;
+	width:100%;
+}

@@ -1,0 +1,81 @@
+# team20 phase2.txt
+Below are instructions on how to use our web app called UAssist
+Link to the website: http://aqueous-reef-85157.herokuapp.com/
+
+1) Login and sign up
+To log in you need to enter a username and password. Depending on who you log in
+as you will be redirected to admin or student main menu. However you need to first
+create your own account, and can do so on the login screen via the create account
+button (really straight forward to use). If you create an account it will
+automatically be a student account.
+
+
+2) Features that only belong to students
+- Schedule functionalities: 
+In order for a schedule to be created a user must first add at least one course under the manage course tab. If no courses are added and the schedule tab is clicked then a page will indicate that no courses were added. 
+A user can manage their courses by adding, editing and deleting.  
+
+a) Manage courses page: 
+Adding a course
+A user can add a course to their course bucket by clicking add time and add course. A validation will popup when the user inputs invalid information which is designed to navigate the user throughout the process.
+
+Button functionality: 
+— Add course: adds a course to the users existing course bucket. When clicked the user input will be validated using regular expressions. For example, a user cannot leave the course name field empty and must follow the specified input for the course code field. When an input is invalid the website will tell user which inputs are invalid and what format to follow. In addition, when entering a time, the user will be told which days are invalid. In order to add a course a user must add at least one lecture/tutorial section. If not, an alert will popup indicating that a lecture/tutorial time is missing. In order to add a time, the user must click add time. 
+— Add time: populates the DOM with time input for a lecture or tutorial section. The user can input any time and is restricted to input hours in 24 hour format (*google chrome was used, firefox has a different format). The user can enter any time between 00:00 and 24:00, the program will prevent any inputs before 00 or after 24. The start and end time can be left empty, which indicates that there are no lecture/tutorials on that day. In order to add the lecture/tutorial time, the user is required to click the add time button again which will be validated. If the validation passes, then the calendar on the right will be populated with the inputed time. Multiple lecture/tutorial times can be added and the validation checks if there are no conflicts in lecture/tutorial time with other lecture/tutorial times in the course.
+Invalid inputs consist of 1. An end time that is before the start time 2. lecture/tutorial time conflicts with an existing lecture/tutorial time 3. a user must have a “lecture” and will not be allowed to just add tutorials 4. The format for the section code is correct. 
+
+b) Editing and deleting a course 
+The user can edit existing courses by clicking the pencil icon. When the icon is clicked the modal will be populated with information from the existing lecture and tutorial times from the course. To edit the course time a user needs to change the time and click “save changes”. The input will be validated similarly to when they first create a course. The modal will not disappear until the user inputs a valid time or when the user clicks “cancel” which will undo all the changes. The view icon will open a modal which populates the schedule for a course. The delete button will delete the course from the users course bucket and remove the course from the list. 
+
+c) Creating a schedule
+When the create schedule is clicked the program will check if at least one course was added, if not, an alert will popup indicating that the user must input a course. If no possible schedules can be created due to conflicts a prompt will appear indicating that no schedules can be made. If only one course is added or at least one schedule can be created, then the button will populate the view schedule web page which will show the users schedule. 
+
+d) Viewing a schedule (view schedule web page)
+An algorithm will create a schedule that makes sure that no courses have conflicts and displays it to the user. The user can then select to display by “default”, which is a schedule that just eliminates all the conflicts between courses or the user can choose to display a schedule that ensures least amount of time spent on campus. (i.e. if you have a schedule that indicates a course from 9am-10am and  3pm-4pm you will most likely stay on campus for 7 hours, but if there are other combinations of courses that reduce the total number of hours spend in campus, then algorithm will display that schedule which has the least amount of time spent on campus).
+
+
+3) Features that only belong to admins
+- Manage Users
+In the manage users tab, admins can filter out students with a particular username
+and they can edit a user's info. Both of these functions requires that the admin
+inputs the username (exact case). To filter out a user from the table on the right
+just input a username and press 'search'. On the other hand to edit a user, enter
+the username then press the edit button. The admin will be redirected to the edit page.
+
+Here, admins have the option to remove, and update user information, whether it be their
+username, password, name, account type (student or admin). In other words admins have
+all the power in this program :). The admin can then cancel the changes or save the changes.
+Note for privacy reasons, the password text field does not contain the actual current password. 
+
+4) Features shared between admins and students
+- Check Rooms
+In the database there are pre existing rooms that have yet to be booked at certain times.
+The user can input a building and the room they are interested in booking. Once the user presses
+the search button, the table will display all the current bookings for the current day. The user
+also has the option to book the room for specific times.
+
+- User Info
+In this tab, the current user has the option to modify his/her current profile information.
+After modifying the information and the user is satisfied with the changes, the user can then
+press save which will update the user information. Otherwise if the user doesn't want to
+make any changes, then he/she can simply switch over to another tab and the changes won't be
+recorded. 
+
+- Sign out
+This feature is self explanatory. It will update the information in the database
+and the user will be returned to the login page.
+
+
+ROUTES: 
+The routes are really simple and each one has comments at the start that explains what they are used for
+in our app. So I will not explain it again. In general we have routes that allows the addition of new account,
+the modification of accounts and getting data in general (ie/ room data). Most of the routes are independent of each other.
+So they don't call one another. A lot of the routes are post as the majority of the time we needed to send data along with the request.
+We don't really have much to talk about in terms of the overview of the routes.
+
+
+NOTE: There are a few bugs that we did not get time to fix. One of them is when you edit a user's information without
+changing the password it basically kills the user and you will not be able to log in. If you edit the password then all is good.
+Since this is a course focused on web dev we hope we don't lose too many marks for these little bugs which have no
+relavance to actual web dev. However, the majority of things should be working (well we think).
+

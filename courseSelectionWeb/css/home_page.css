@@ -1,0 +1,16 @@
+.mySlides {
+	margin-left: auto;
+  margin-right: auto;
+}
+
+.slider {
+	width:100%;
+	/* min-width: 600px; */
+	/* max-height:500px; */
+	overflow: auto;
+	margin:auto;
+}
+
+#welcome {
+	font-family: 'Roboto-Regular', sans-serif;
+}

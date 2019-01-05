@@ -1,0 +1,53 @@
+/*
+This css file will contain all the generic styles that our website will need
+*/
+
+/* General styles */
+@font-face {
+  font-family: 'neoteric';
+  src: url('./Graphical_Assets/Font/neoteric.ttf') @ttf;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto.eot'); /* IE9 Compat Modes */
+  src: url('roboto.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('roboto.woff') format('woff'), /* Modern Browsers */
+  url('roboto.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('roboto.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+body {
+    min-width:100vw;
+    min-height:100vh;
+}
+
+/* Manage Users View*/
+.manage_user_input_field_list{
+  list-style-type: none;
+}
+
+.manage_users_button{
+  min-width: 130px;
+}
+
+.table_header{
+  margin-bottom: 10px;
+  font-family: 'Roboto-thin', sans-serif;
+  font-size: 48px;
+  color: black;
+}
+
+.text_info {
+  font-family: 'Roboto-Regular', sans-serif;
+}
+
+#information_table{
+	width: 60%;
+	float:right;
+}

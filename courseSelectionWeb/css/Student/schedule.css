@@ -1,0 +1,57 @@
+.scheduletopNav{
+  border: 1px solid #CCC;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  background-color: #EEE;
+  padding: 5px;
+}
+
+.scheduleTime{
+  text-align: right;
+  font-weight: bold;
+  background-color: #fff;
+  vertical-align: top;
+  border: 1px solid #EEE;
+  padding: 10px;
+}
+
+#scheduleselectTitle{
+  color: #00204E;
+}
+
+#displaytimetableSchedule{
+  min-width:500px;
+  color: #00204E;
+  min-height: 500px;
+}
+
+#scheduleDropDown{
+  margin-bottom: 10px;
+}
+
+.scheduleEmptyCell{
+  background-color: #fff;
+  vertical-align: top;
+  border: 1px solid #EEE;
+}
+
+.scheduleCourseCode{
+  font-weight: bold;
+}
+
+.scheduleCourse{
+  text-align: left;
+  vertical-align: top;
+  padding: 5px;
+  font-size: smaller;
+  border:solid;
+}
+
+.timetableSchedule{
+  margin-bottom: 50px;
+}
+
+#scheduleContainer {
+  width: 100%;
+}

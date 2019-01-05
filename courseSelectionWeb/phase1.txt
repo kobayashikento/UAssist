@@ -1,0 +1,37 @@
+# team20 phase1.txt
+Below are instructions on how to use our web app called UAssist
+1) Login screen
+To log in you need to enter a username and password. Depending on who you log in
+as you will be redirected to admin or student main menu. We provide a sample
+student and admin login. To log in as student the username is "student1" and
+password is "password1". To log in as an admin the username is "admin1" and
+password is "password2". However you may wish to create your own account and can
+do so on the login screen via the create account button (really straight forward to use).
+If you create an account it will automatically be a student account.
+
+2) Student version
+The student version includes a schedule and check rooms feature (we may add more
+features in phase2). The schedule feature lets the user enter in courses and their
+respective time slots (lecture and tut times). Then the web app will take this
+and output an optimized schedule for the user. As of right now the scheduling
+algorithm is random but ensures there are no conflicts. The optimizing could
+not be done on time but will be fully implemented in phase2. However if you
+like random schedule generator then this app is perfect for you. Note: TA told
+us not to focus on getting the scheduling algorithm to fully operate and this
+is what we did. Check rooms is a feature that lets a user enter in a room and a time
+and see if that room is being used and also displays information about the bookings
+and usage of that room. The rooms are of course hardcoded. We hardcoded BA2210 so you
+can try that. Students can also view and update their personal info (click the user info
+button in the main menu). This is straight forward and we leave it as an exercise
+for the user to figure out.
+
+3) Admin version
+The admin version is basically the same but instead of being able to optimize a
+schedule the admin is able to view and manage all the users (both admin and student
+accounts). We did not hardcode that many students so when viewing all the accounts
+you will not see many. There are five main features or operations you can do on accounts
+as an admin. The usage is really easy and you can figure out on your own. Just note
+that when entering a username it is case sensative.
+
+
+Good Luck (Phase1)

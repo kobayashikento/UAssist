@@ -1,0 +1,57 @@
+/* Login in page styling */
+#LoginContainer{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(.././Graphical_Assets/Login/login_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  opacity: 0.9;
+  padding: 80px;
+  overflow: auto;
+  min-width: 700px;
+}
+
+#LoginTitle{
+  margin-top: 80px;
+  height: 75px;
+  margin-bottom: 30px;
+}
+
+#LoginInterface{
+  background-color: rgba(255, 255, 255, .3);
+  width: 350px;
+  min-height: 525px;
+  text-align:center;
+}
+
+.LoginInput {
+  width: 100%;
+  height: 40px;
+  margin-top: 3vh;
+  /* padding: 0 10px 0 10px; */
+}
+
+#sign_in_button{
+  margin-top: 70px;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  text-align:center;
+}
+
+#create_acct_button{
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.login_objects{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}

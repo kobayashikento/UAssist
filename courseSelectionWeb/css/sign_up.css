@@ -1,0 +1,66 @@
+/* Create new account page */
+#SignupContainer{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(.././Graphical_Assets/Login/login_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  opacity: 0.9;
+  padding: 80px;
+  overflow: auto;
+  min-width: 700px;
+}
+
+#signupPage{
+  margin-top: 30px;
+  height: 75px;
+  margin-bottom: 20px;
+  font-family: 'neoteric', sans-serif;
+  font-size: 48px;
+  color: black;
+}
+
+#SignupInterface{
+  background-color: rgba(255, 255, 255, .3);
+  width: 350px;
+  min-height: 525px;
+  text-align:center;
+}
+#InputFName {
+  display: block-inline;
+  width: 47.5%;
+  margin-right: 2.5%;
+  /* padding: 0 10px 0 10px; */
+}
+#InputLName {
+  display: block-inline;
+  width: 47.5%;
+  margin-left: 2.5%;
+  /* padding: 0 10px 0 10px; */
+}
+
+.SignupInput {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 2vh;
+  /* padding: 0 10px 0 10px; */
+}
+
+.signup_objects{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+.create_acct_button{
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.h

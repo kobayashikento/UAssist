@@ -1,0 +1,24 @@
+/* Check Times View */
+#check_rooms_time_select{
+  width: 55px;
+  height: 35px;
+}
+
+.table_content {
+  background-color: white;
+}
+
+.table-wrapper-scroll-y {
+  display: block;
+  max-height: 200px;
+  overflow-y: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+#selectDisplayCol{
+  margin-left: 10%;
+}
+
+#listGroupCourses {
+  display: block;
+}
