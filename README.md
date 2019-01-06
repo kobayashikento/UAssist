@@ -7,6 +7,6 @@ will indicate whether a conflict exists and is also able create a schedule ensur
 As a group, we created both the front and backend of this website and it made is accessible anywhere on the web using the 
 following link http://aqueous-reef-85157.herokuapp.com/
 
-The front end mainly uses html, css, js and, jQuery and the server side were coded using ajax, mongo db and, node.js
+The front end mainly uses Bootstrap and jQuery and the server side were coded using ajax, mongo db and, node.js
 
 We received a grade of 100% (class avg. 75.5%) in this project.
