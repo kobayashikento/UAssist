@@ -9,4 +9,3 @@ following link http://aqueous-reef-85157.herokuapp.com/
 
 The front end mainly uses Bootstrap and jQuery and the server side were coded using ajax, mongo db and, node.js
 
-We received a grade of 100% (class avg. 75.5%) in this project.
